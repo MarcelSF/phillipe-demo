@@ -1,0 +1,9 @@
+<h1>These are all of our instruments!</h1>
+<% @instruments.each do |instrument|  %>
+  <p><%= instrument.name %></p>
+  <p><%= instrument.price %></p>
+  <p><%= instrument.description %></p>
+<% end %>
+
+<h2>Don't forget to add more instruments</h2>
+<%= link_to 'Add another instrument', new_instrument_path %>
